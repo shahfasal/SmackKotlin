@@ -1,9 +1,11 @@
 package com.example.fasalshah.smackkotlin
 
+
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -11,6 +13,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
     }
+
 
     fun loginLoginBtn(view : View){
 
@@ -20,4 +23,5 @@ class LoginActivity : AppCompatActivity() {
         val createUser = Intent(this,CreateUser::class.java)
         startActivity(createUser)
     }
+
 }
