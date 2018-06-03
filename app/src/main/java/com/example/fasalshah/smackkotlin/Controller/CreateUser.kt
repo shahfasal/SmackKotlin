@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.fasalshah.smackkotlin.R
+import com.example.fasalshah.smackkotlin.Service.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
@@ -53,5 +54,10 @@ class CreateUser : AppCompatActivity() {
 
     fun createUserClicked (view : View){
 
+        AuthService.registerUser(this,"r@r.com","1234"){
+            if(it){
+
+            }
+        }
     }
 }
