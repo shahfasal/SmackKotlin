@@ -1,10 +1,11 @@
-package com.example.fasalshah.smackkotlin
+package com.example.fasalshah.smackkotlin.Controller
 
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.fasalshah.smackkotlin.R
 
 
 class LoginActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun signupBtn(view : View){
-        val createUser = Intent(this,CreateUser::class.java)
+        val createUser = Intent(this, CreateUser::class.java)
         startActivity(createUser)
     }
 
