@@ -33,7 +33,12 @@ object AuthService {
 
         },
                 Response.ErrorListener { error ->
-                    Log.e("register error", error.localizedMessage)
+                    try {
+                        Log.e("register error", error.localizedMessage)
+
+                    }catch (e : Exception){
+                        e.printStackTrace()
+                    }
                     complete(false)
                 }
 
